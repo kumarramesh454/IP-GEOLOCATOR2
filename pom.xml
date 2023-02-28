@@ -78,6 +78,19 @@
                 <artifactId>maven-site-plugin</artifactId>
                 <version>4.0.0-M4</version>
             </plugin>
+            <plugin>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok-maven-plugin</artifactId>
+                <version>1.18.20.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>delombok</goal>
+                        </goals>
+                        <phase>generate-sources</phase>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
     <reporting>
